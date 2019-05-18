@@ -1,7 +1,21 @@
 <!doctype html>
+<meta charset="utf-8"/>
 <title>Hello from Flask</title>
+
+<script src="static/vue.js"></script>
+
+
+<body>
 {% if name %}
-  <h1>Hello {{ name }}!</h1>
+    <h1>Hello {[ name ]}!</h1>
+
 {% else %}
-  <h1>Hello World!</h1>
+    <h1>Hello World!</h1>
 {% endif %}
+
+<div id="app">
+    {{ message }}
+</div>
+</body>
+
+<script src="static/hello.js"></script>
